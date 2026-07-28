@@ -8,7 +8,8 @@ namespace TP2_Variables_Constantes_IO
         static void Main(string[] args)
         {
             //Ejercicio1.Ejecutar();
-            Ejercicio2.Ejecutar();
+            //Ejercicio2.Ejecutar();
+            Ejercicio3.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -50,6 +51,27 @@ public class Ejercicio2
 
         Console.WriteLine("El valor de la base es: {0}", baseRect);
         Console.WriteLine("El valor de la altura es: {0}", alturaRect);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 3. Conversión de temperatura: Pide al usuario ingresar el nombre de una ciudad y su
+// temperatura en grados Celsius. Muestra: "En Córdoba, la temperatura es de 20°C."
+
+public class Ejercicio3
+{
+    public static void Ejecutar()
+    {  
+        Console.Clear();
+        Console.Write("Ingrese el nombre de una ciudad: ");
+        string ciudad = Console.ReadLine();
+
+        Console.Write("Ingrese la temperatura en grado Celcius: ");
+        string temperatura = Console.ReadLine();
+
+        Console.WriteLine("En {0}, la temperatura es de {1}°C", ciudad, temperatura);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
