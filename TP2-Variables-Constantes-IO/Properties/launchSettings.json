@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TP2-Variables-Constantes-IO": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
