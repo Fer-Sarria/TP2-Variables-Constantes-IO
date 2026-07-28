@@ -9,7 +9,8 @@ namespace TP2_Variables_Constantes_IO
         {
             //Ejercicio1.Ejecutar();
             //Ejercicio2.Ejecutar();
-            Ejercicio3.Ejecutar();
+            //Ejercicio3.Ejecutar();
+            Ejercicio4.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -72,6 +73,27 @@ public class Ejercicio3
         string temperatura = Console.ReadLine();
 
         Console.WriteLine("En {0}, la temperatura es de {1}°C", ciudad, temperatura);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 4. Encuesta de gustos: Solicita al usuario ingresar un color y su comida favorita. Muestra
+// por pantalla el mensaje: "Tu color favorito es azul y tu comida favorita es pizza."
+
+public class Ejercicio4
+{
+    public static void Ejecutar()
+    {  
+        Console.Clear();
+        Console.Write("Ingrese un color: ");
+        string color = Console.ReadLine();
+
+        Console.Write("Ingrese su comida favorita: ");
+        string comida = Console.ReadLine();
+
+        Console.WriteLine("Tu color favorito es {0} y tu comida favorita es {1}", color, comida);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
