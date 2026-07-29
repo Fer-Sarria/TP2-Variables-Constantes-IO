@@ -18,7 +18,9 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio9.Ejecutar();
             //Ejercicio10.Ejecutar();
             //Ejercicio11.Ejecutar();
-            Ejercicio12.Ejecutar();
+            //Ejercicio12.Ejecutar();
+            //Ejercicio13.Ejecutar();
+            Ejercicio14.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -285,6 +287,54 @@ public class Ejercicio12
 
 
         Console.WriteLine("Tienes un peso de {0}Kg y una altura de {1}mw", peso, altura);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 13. Compra en línea:Pide el nombre del cliente, producto y cantidad. Muestra en pantalla:
+// "Lucía compró 2 unidades del producto 'Mouse'."
+
+public class Ejercicio13
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el nombre del cliente: ");
+        string cliente = Console.ReadLine();
+
+        Console.Write("Ingrese el producto: ");
+        string producto = Console.ReadLine();
+
+        Console.Write("Ingrese la cantidad: ");
+        string cantidad = Console.ReadLine();
+
+        Console.WriteLine("{0} compró {1} unidades del producto '{2}'", cliente, cantidad, producto);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 14. Datos de viaje: Solicita el destino, la distancia en km y el tiempo estimado en horas.
+// Muestra en pantalla: "Viaje a Mendoza - 1000 km - Tiempo estimado: 12 horas."
+
+public class Ejercicio14
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el destino: ");
+        string destino = Console.ReadLine();
+
+        Console.Write("Ingrese la distancia en Km: ");
+        string distancia = Console.ReadLine();
+
+        Console.Write("Ingrese el tiempo estimado en horas: ");
+        string tiempo = Console.ReadLine();
+
+        Console.WriteLine("Viaje a {0} - {1}Km - Tiempo estimado: {2} horas.", destino, distancia, tiempo);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
