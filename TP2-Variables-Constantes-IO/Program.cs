@@ -217,3 +217,27 @@ public class Ejercicio9
         Console.ReadKey();
     }
 }
+
+// 10. Boletos de cine: Solicita el nombre del cliente, número de boletos y el precio por boleto.
+// Muestra: "Carlos compró 3 boletos a $5.50 cada uno."
+
+public class Ejercicio10
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el nombre del cliente: ");
+        string cliente = Console.ReadLine();
+
+        Console.Write("Ingrese el número de boletos: ");
+        string boletos = Console.ReadLine();
+
+        Console.Write("Ingrese el precio por boleto : ");
+        string precio = Console.ReadLine();
+
+        Console.WriteLine("{0} compró {1} boletos a ${2} cada uno.", cliente, boletos, precio);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
