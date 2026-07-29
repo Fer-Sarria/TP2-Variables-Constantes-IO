@@ -14,7 +14,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio5.Ejecutar();
             //Ejercicio6.Ejecutar();
             //Ejercicio7.Ejecutar();
-            Ejercicio8.Ejecutar();
+            //Ejercicio8.Ejecutar();
+            Ejercicio9.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -121,7 +122,7 @@ public class Ejercicio5
         Console.WriteLine("El producto {0} cuesta ${1}", producto, precio);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
-        Console.ReadLine();
+        Console.ReadKey();
     }
 }
 
@@ -145,7 +146,7 @@ public class Ejercicio6
         Console.WriteLine("Estudiante: {0} - Curso: {1} - Nota: {2}", estudiante, curso, nota);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
-        Console.ReadLine();
+        Console.ReadKey();
     }
 }
 
@@ -169,7 +170,7 @@ public class Ejercicio7
         Console.WriteLine("Usuario: {0} - Email: {1} - Tel: {2}", nombre, email, telefono);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
-        Console.ReadLine();
+        Console.ReadKey();
     }
 }
 
@@ -191,6 +192,28 @@ public class Ejercicio8
         Console.WriteLine("El año actual es {0} y tu año de nacimiento es {1}", anioActual, anioNacimiento);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
-        Console.ReadLine();
+        Console.ReadKey();
+    }
+}
+
+// 9. Ingreso de coordenadas: Pide al usuario ingresar las coordenadas X y Y. Muestra por
+// pantalla el mensaje: "Las coordenadas ingresadas son (3, 7)."
+
+public class Ejercicio9
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese la coordenada X: ");
+        string coordX = Console.ReadLine();
+
+        Console.Write("Ingrese la coordenada Y: ");
+        string coordY = Console.ReadLine();
+
+
+        Console.WriteLine("Las coordenadas ingresadas son ({0}, {1})", coordX, coordY );
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
     }
 }
