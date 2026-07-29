@@ -23,7 +23,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio14.Ejecutar();
             //Ejercicio15.Ejecutar();
             //Ejercicio16.Ejecutar();
-            Ejercicio17.Ejecutar();
+            //Ejercicio17.Ejecutar();
+            Ejercicio18.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -410,6 +411,30 @@ public class Ejercicio17
         string duracion = Console.ReadLine();
 
         Console.WriteLine("Clase el {0} a las {1} AM, duración: {2} horas.", dia, hora, duracion);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 18. Registro deportivo: Solicita al usuario el nombre del jugador, deporte y puntaje. Muestra
+// en pantalla: "Jugador: Ana Pérez - Deporte: Tenis - Puntaje: 87"
+
+public class Ejercicio18
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el nombre del jugador: ");
+        string jugador = Console.ReadLine();
+
+        Console.Write("Ingrese el deporte: ");
+        string deporte = Console.ReadLine();
+
+        Console.Write("Ingrese el puntaje: ");
+        string puntaje = Console.ReadLine();
+
+        Console.WriteLine("Jugador: {0} - Deporte: {1} - Puntaje: {2}", jugador, deporte,puntaje);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
