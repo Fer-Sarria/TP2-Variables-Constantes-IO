@@ -24,7 +24,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio15.Ejecutar();
             //Ejercicio16.Ejecutar();
             //Ejercicio17.Ejecutar();
-            Ejercicio18.Ejecutar();
+            //Ejercicio18.Ejecutar();
+            Ejercicio19.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -435,6 +436,30 @@ public class Ejercicio18
         string puntaje = Console.ReadLine();
 
         Console.WriteLine("Jugador: {0} - Deporte: {1} - Puntaje: {2}", jugador, deporte,puntaje);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 19. Datos de nacimiento: Pide día, mes y año de nacimiento. Muestra en pantalla: "Fecha
+// de nacimiento: 15 / 04 / 2001".
+
+public class Ejercicio19
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el día de nacimiento: ");
+        string dia = Console.ReadLine();
+
+        Console.Write("Ingrese el mes de nacimiento: ");
+        string mes = Console.ReadLine();
+
+        Console.Write("Ingrese el año de nacimiento: ");
+        string anio = Console.ReadLine();
+
+        Console.WriteLine("Fecha de nacimiento: {0}/{1}/{2}", dia, mes,anio);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
