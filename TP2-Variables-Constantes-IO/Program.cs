@@ -17,7 +17,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio8.Ejecutar();
             //Ejercicio9.Ejecutar();
             //Ejercicio10.Ejecutar();
-            Ejercicio11.Ejecutar();
+            //Ejercicio11.Ejecutar();
+            Ejercicio12.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -262,6 +263,28 @@ public class Ejercicio11
         string edad = Console.ReadLine();
 
         Console.WriteLine("Tu mascota es un {0}, se llama {1} y tiene {2} años", tipo, nombre, edad);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 12. Peso y Altura: Solicita el peso en kg y altura en metros. Muestra en pantalla: "Tienes un
+// peso de 70kg y una altura de 1.75m"
+
+public class Ejercicio12
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el peso en Kg: ");
+        string peso = Console.ReadLine();
+
+        Console.Write("Ingrese la altura en metros: ");
+        string altura = Console.ReadLine();
+
+
+        Console.WriteLine("Tienes un peso de {0}Kg y una altura de {1}mw", peso, altura);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
