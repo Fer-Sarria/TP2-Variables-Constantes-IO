@@ -13,7 +13,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio4.Ejecutar();
             //Ejercicio5.Ejecutar();
             //Ejercicio6.Ejecutar();
-            Ejercicio7.Ejecutar();
+            //Ejercicio7.Ejecutar();
+            Ejercicio8.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -174,3 +175,22 @@ public class Ejercicio7
 
 // 8. Cálculo de edad: Pide al usuario el año actual y su año de nacimiento. Muestra por
 // pantalla: "El año actual es 2025 y tu año de nacimiento es 1982."
+
+public class Ejercicio8
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el año actual: ");
+        string anioActual = Console.ReadLine();
+
+        Console.Write("Ingrese su año de nacimiento: ");
+        string anioNacimiento = Console.ReadLine();
+
+
+        Console.WriteLine("El año actual es {0} y tu año de nacimiento es {1}", anioActual, anioNacimiento);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadLine();
+    }
+}
