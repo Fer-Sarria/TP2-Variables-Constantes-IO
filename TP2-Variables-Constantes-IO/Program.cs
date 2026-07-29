@@ -15,7 +15,9 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio6.Ejecutar();
             //Ejercicio7.Ejecutar();
             //Ejercicio8.Ejecutar();
-            Ejercicio9.Ejecutar();
+            //Ejercicio9.Ejecutar();
+            //Ejercicio10.Ejecutar();
+            Ejercicio11.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -236,6 +238,30 @@ public class Ejercicio10
         string precio = Console.ReadLine();
 
         Console.WriteLine("{0} compró {1} boletos a ${2} cada uno.", cliente, boletos, precio);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 11. Encuesta de mascotas: Pide al usuario un tipo de mascota, su nombre y edad. Muestra
+// el mensaje por pantalla: "Tu mascota es un perro, se llama Max y tiene 4 años."
+
+public class Ejercicio11
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese un tipo de mascota: ");
+        string tipo = Console.ReadLine();
+
+        Console.Write("Ingrese el nombre de la mascota: ");
+        string nombre = Console.ReadLine();
+
+        Console.Write("Ingrese la edad de la mascota: ");
+        string edad = Console.ReadLine();
+
+        Console.WriteLine("Tu mascota es un {0}, se llama {1} y tiene {2} años", tipo, nombre, edad);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
