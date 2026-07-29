@@ -25,7 +25,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio16.Ejecutar();
             //Ejercicio17.Ejecutar();
             //Ejercicio18.Ejecutar();
-            Ejercicio19.Ejecutar();
+            //Ejercicio19.Ejecutar();
+            Ejercicio20.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -460,6 +461,28 @@ public class Ejercicio19
         string anio = Console.ReadLine();
 
         Console.WriteLine("Fecha de nacimiento: {0}/{1}/{2}", dia, mes,anio);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 20. Encuesta tecnológica: Solicita el sistema operativo preferido y si prefiere laptop o PC de
+// escritorio.Muestra en pantalla:"Prefieres Windows y usas laptop."
+
+public class Ejercicio20
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el sistema operativo preferido: ");
+        string so = Console.ReadLine();
+
+        Console.Write("¿Prefiere laptop o PC de escritorio? ");
+        string equipo = Console.ReadLine();
+
+
+        Console.WriteLine("Prefieres {0} y usas {1}", so, equipo);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
