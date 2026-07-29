@@ -21,7 +21,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio12.Ejecutar();
             //Ejercicio13.Ejecutar();
             //Ejercicio14.Ejecutar();
-            Ejercicio15.Ejecutar();
+            //Ejercicio15.Ejecutar();
+            Ejercicio16.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -360,6 +361,30 @@ public class Ejercicio15
         string anio = Console.ReadLine();
 
         Console.WriteLine("Vehículo registrado: {0} {1} - Año {2}", marca, modelo, anio);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 16. Plan de estudios: Pide el nombre del alumno, asignatura y profesor. Muestra en
+// pantalla: "María cursa Programación con el profesor Gómez."
+
+public class Ejercicio16
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el nombre del alumno: ");
+        string alumno = Console.ReadLine();
+
+        Console.Write("Ingrese la asignatura: ");
+        string asignatura = Console.ReadLine();
+
+        Console.Write("Ingrese el nombre del profesor: ");
+        string profesor = Console.ReadLine();
+
+        Console.WriteLine("{0} cursa {1} con el profesor {2}", alumno, asignatura,profesor);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
