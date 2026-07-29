@@ -10,7 +10,10 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio1.Ejecutar();
             //Ejercicio2.Ejecutar();
             //Ejercicio3.Ejecutar();
-            Ejercicio4.Ejecutar();
+            //Ejercicio4.Ejecutar();
+            //Ejercicio5.Ejecutar();
+            //Ejercicio6.Ejecutar();
+            Ejercicio7.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -120,3 +123,54 @@ public class Ejercicio5
         Console.ReadLine();
     }
 }
+
+// 6. Registro escolar: Solicita al usuario el nombre del estudiante, el curso, y su nota final.
+// Muestra por pantalla el mensaje: "Estudiante: Carla López - Curso: Matemáticas - Nota: 9.5"
+
+public class Ejercicio6
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el nombre del estudiante: ");
+        string estudiante = Console.ReadLine();
+
+        Console.Write("Ingrese el curso: ");
+        string curso = Console.ReadLine();
+
+        Console.Write("Ingrese su nota final: ");
+        string nota = Console.ReadLine();
+
+        Console.WriteLine("Estudiante: {0} - Curso: {1} - Nota: {2}", estudiante, curso, nota);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadLine();
+    }
+}
+
+// 7. Información de contacto: Solicita el nombre, correo electrónico y teléfono del usuario.
+// Muestra: "Usuario: Luis Ramos - Email: luis@mail.com - Tel: 123456789"
+
+public class Ejercicio7
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese su nombre: ");
+        string nombre = Console.ReadLine();
+
+        Console.Write("Ingrese su correo electrónico: ");
+        string email = Console.ReadLine();
+
+        Console.Write("Ingrese su teléfono : ");
+        string telefono = Console.ReadLine();
+
+        Console.WriteLine("Usuario: {0} - Email: {1} - Tel: {2}", nombre, email, telefono);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadLine();
+    }
+}
+
+// 8. Cálculo de edad: Pide al usuario el año actual y su año de nacimiento. Muestra por
+// pantalla: "El año actual es 2025 y tu año de nacimiento es 1982."
