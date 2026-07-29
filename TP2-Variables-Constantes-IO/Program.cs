@@ -22,7 +22,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio13.Ejecutar();
             //Ejercicio14.Ejecutar();
             //Ejercicio15.Ejecutar();
-            Ejercicio16.Ejecutar();
+            //Ejercicio16.Ejecutar();
+            Ejercicio17.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -385,6 +386,30 @@ public class Ejercicio16
         string profesor = Console.ReadLine();
 
         Console.WriteLine("{0} cursa {1} con el profesor {2}", alumno, asignatura,profesor);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 17. Horario de clase: Solicita el día, hora de inicio y duración. Muestra en pantalla: "Clase el
+// martes a las 10:00 AM, duración: 2 horas."
+
+public class Ejercicio17
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el día: ");
+        string dia = Console.ReadLine();
+
+        Console.Write("Ingrese hora de inicio: ");
+        string hora = Console.ReadLine();
+
+        Console.Write("Ingrese la duración en horas: ");
+        string duracion = Console.ReadLine();
+
+        Console.WriteLine("Clase el {0} a las {1} AM, duración: {2} horas.", dia, hora, duracion);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
