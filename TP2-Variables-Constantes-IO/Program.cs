@@ -99,3 +99,24 @@ public class Ejercicio4
         Console.ReadKey();
     }
 }
+
+// 5. Datos de un producto: Pide al usuario ingresar el nombre de un producto y su precio.
+// Muestra por pantalla el mensaje: "El producto 'Laptop' cuesta $1200."
+
+public class Ejercicio5
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese el nombre de un producto: ");
+        string producto = Console.ReadLine();
+
+        Console.Write("Ingrese su precio: ");
+        string precio = Console.ReadLine();
+
+        Console.WriteLine("El producto {0} cuesta ${1}", producto, precio);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadLine();
+    }
+}
