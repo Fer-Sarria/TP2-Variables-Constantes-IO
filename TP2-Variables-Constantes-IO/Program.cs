@@ -20,7 +20,8 @@ namespace TP2_Variables_Constantes_IO
             //Ejercicio11.Ejecutar();
             //Ejercicio12.Ejecutar();
             //Ejercicio13.Ejecutar();
-            Ejercicio14.Ejecutar();
+            //Ejercicio14.Ejecutar();
+            Ejercicio15.Ejecutar();
         }
     }
     public class Ejercicio1
@@ -335,6 +336,30 @@ public class Ejercicio14
         string tiempo = Console.ReadLine();
 
         Console.WriteLine("Viaje a {0} - {1}Km - Tiempo estimado: {2} horas.", destino, distancia, tiempo);
+
+        Console.WriteLine("\nPresiona cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+// 15. Registro de vehículo: Pide al usuario marca, modelo y año del automóvil. Muestra en
+// pantalla: "Vehículo registrado: Toyota Corolla - Año: 2020"
+
+public class Ejercicio15
+{
+    public static void Ejecutar()
+    {
+        Console.Clear();
+        Console.Write("Ingrese la marca del automóvil: ");
+        string marca = Console.ReadLine();
+
+        Console.Write("Ingrese el modelo del automóvil: ");
+        string modelo = Console.ReadLine();
+
+        Console.Write("Ingrese el año del automóvil: ");
+        string anio = Console.ReadLine();
+
+        Console.WriteLine("Vehículo registrado: {0} {1} - Año {2}", marca, modelo, anio);
 
         Console.WriteLine("\nPresiona cualquier tecla para salir...");
         Console.ReadKey();
